@@ -1,0 +1,14 @@
+[
+   	{
+   		"category": "ADM",
+      	"name":"ADMINISTRATIVO"
+   	},
+   	{
+   		"category": "PRJ",
+      	"name":"PROJETO"
+   	},
+   	{
+   		"category": "PRD",
+      	"name":"PRODUÇÃO"
+   	}
+]
