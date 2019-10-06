@@ -1,0 +1,147 @@
+[
+   {
+      "spec": "ALPIND",
+      "job":"OBRALP",
+      "name":"ALPINISTA INDUSTRIAL"
+   },
+   {
+      "spec": "ELEFOR",
+      "job":"OBRELE",
+      "name":"ELETRICISTA FORÇA E CONTROLE"
+   },
+   {
+      "spec": "ELEMAN",
+      "job":"OBRELE",
+      "name":"ELETRICISTA DE MANUTENÇÃO"
+   },
+   {
+      "spec": "ELEMON",
+      "job":"OBRELE",
+      "name":"ELETRICISTA MONTADOR"
+   },
+   {
+      "spec": "INSDIM",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE DIMENSIONAL"
+   },
+   {
+      "spec": "INSELE",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE ELETRICA"
+   },
+   {
+      "spec": "INSEQU",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE EQUIPAMENTOS"
+   },
+   {
+      "spec": "INSLIQ",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE LP (LIQUIDO PENETRANTE)"
+   },
+   {
+      "spec": "INSPAR",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE PM (PARTICULA MAGNETICA)"
+   },
+   {
+      "spec": "INSPN1",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE PINTURA N1"
+   },
+   {
+      "spec": "INSPN2",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE PINTURA N2"
+   },
+   {
+      "spec": "INSSN1",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE SOLDA N1"
+   },
+   {
+      "spec": "INSSN2",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE SOLDA N2"
+   },
+   {
+      "spec": "INSSN3",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE SOLDA N3"
+   },
+   {
+      "spec": "INSUN1",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE UT (ULTRA-SOM) N1"
+   },
+   {
+      "spec": "INSUN2",
+      "job":"INSPRJ",
+      "name":"INSPETOR DE UT (ULTRA-SOM) N2"
+   },
+   {
+      "spec": "MECAJU",
+      "job":"INDMEC",
+      "name":"MECÂNICO AJUSTADOR"
+   },
+   {
+      "spec": "MECMAN",
+      "job":"INDMEC",
+      "name":"MECÂNICO DE MANUTENÇÃO"
+   },
+   {  
+      "spec": "MECMON",
+      "job":"INDMEC",
+      "name":"MECÂNICO MONTADOR"
+   },
+   {
+      "spec": "MONAND",
+      "job":"INDMON",
+      "name":"MONTADOR DE ANDAIME"
+   },
+   {
+      "spec": "MONEST",
+      "job":"INDMON",
+      "name":"MONTADOR DE ESTRUTURA"
+   },
+   {
+      "spec": "MONIND",
+      "job":"INDMON",
+      "name":"MONTADOR INDUSTRIAL"
+   },
+   {
+      "spec": "PININD",
+      "job":"OBRPIN",
+      "name":"PINTOR INDUSTRIAL"
+   },
+   {
+      "spec": "PINPAR",
+      "job":"OBRPIN",
+      "name":"PINTOR PREDIAL"
+   },
+   {
+      "spec": "SOLELE",
+      "job":"FERSOL",
+      "name":"SOLDADOR ELETRODO - ER"
+   },
+   {
+      "spec": "SOLMAG",
+      "job":"FERSOL",
+      "name":"SOLDADOR MAG"
+   },
+   {
+      "spec": "SOLMIG",
+      "job":"FERSOL",
+      "name":"SOLDADOR MIG"
+   },
+   {
+      "spec": "SOLPON",
+      "job":"FERSOL",
+      "name":"SOLDADOR PONTEADOR"
+   },
+   {
+      "spec": "SOLTIG",
+      "job":"FERSOL",
+      "name":"SOLDADOR TIG"
+   }
+]

@@ -1,0 +1,302 @@
+[
+   {
+      "job": "AUXADM",
+      "category":"ADM",
+      "name":"AUXILIAR ADMINISTRATIVO",
+      "type":"MOI"
+   },
+   {
+      "job": "AUXDEP",
+      "category":"ADM",
+      "name":"ASSISTENTE DE RECURSOS HUMANOS",
+      "type":"MOI"
+   },
+   {
+      "job": "AUXREC",
+      "category":"ADM",
+      "name":"RECEPCIONISTA",
+      "type":"MOI"
+   },
+   {
+      "job": "BACADM",
+      "category":"ADM",
+      "name":"BACHAREL EM ADMINISTRAÇÃO",
+      "type":"MOI"
+   },
+   {
+      "job": "BACCON",
+      "category":"ADM",
+      "name":"BACHAREL EM CONTABILIDADE",
+      "type":"MOI"
+   },
+   {
+      "job": "BACRHM",
+      "category":"ADM",
+      "name":"BACHAREL EM RECURSOS HUMANOS",
+      "type":"MOI"
+   },
+   {
+      "job": "TECADM",
+      "category":"ADM",
+      "name":"TÉCNICO EM ADMINISTRAÇÃO",
+      "type":"MOI"
+   },
+   {
+      "job": "TECCON",
+      "category":"ADM",
+      "name":"TÉCNICO EM CONTABILIDADE",
+      "type":"MOI"
+   },
+   {
+      "job": "ARQBAC",
+      "category":"PRJ",
+      "name":"ARQUITETO/DESIGN INTERIORES",
+      "type":"MOI"
+   },
+   {
+      "job": "CLSPRJ",
+      "category":"PRJ",
+      "name":"COORDENADOR/LIDER/SUPERVISOR",
+      "type":"MOI"
+   },
+   {
+      "job": "ENGAMB",
+      "category":"PRJ",
+      "name":"ENGENHEIRO AMBIENTAL",
+      "type":"MOI"
+   },
+   {
+      "job": "ENGCIV",
+      "category":"PRJ",
+      "name":"ENGENHEIRO CIVIL",
+      "type":"MOI"
+   },
+   {
+      "job": "ENGELEC",
+      "category":"PRJ",
+      "name":"ENGENHEIRO ELÉTRICO",
+      "type":"MOI"
+   },
+   {
+      "job": "ENGELEN",
+      "category":"PRJ",
+      "name":"ENGENHEIRO ELETRÔNICO",
+      "type":"MOI"
+   },
+   {
+      "job": "ENGMEC",
+      "category":"PRJ",
+      "name":"ENGENHEIRO MECÂNICO",
+      "type":"MOI"
+   },
+   {
+      "job": "ENGSEG",
+      "category":"PRJ",
+      "name":"ENGENHEIRO DE SEGURANÇA",
+      "type":"MOI"
+   },
+   {
+      "job": "INSPRJ",
+      "category":"PRJ",
+      "name":"INSPETOR",
+      "type":"MOI"
+   },
+   {
+      "job": "TECAMB",
+      "category":"PRJ",
+      "name":"TÉCNICO EM MEIO AMBIENTE",
+      "type":"MOI"
+   },
+   {
+      "job": "TECEDI",
+      "category":"PRJ",
+      "name":"TÉCNICO EM EDIFICAÇÕES",
+      "type":"MOI"
+   },
+   {
+      "job": "TECELE",
+      "category":"PRJ",
+      "name":"TÉCNICO EM ELETRÔNICA",
+      "type":"MOI"
+   },
+   {
+      "job":"TECELT",
+      "category":"PRJ",
+      "name":"TÉCNICO EM ELETROTÉCNICA",
+      "type":"MOI"
+   },
+   {
+      "job": "TECEST",
+      "category":"PRJ",
+      "name":"TÉCNICO EM ESTRADAS",
+      "type":"MOI"
+   },
+   {
+      "job": "TECMEC",
+      "category":"PRJ",
+      "name":"TÉCNICO EM MECÂNICA",
+      "type":"MOI"
+   },
+   {
+      "job": "TECPLN",
+      "category":"PRJ",
+      "name":"TÉCNICO DE PLANEJAMENTO",
+      "type":"MOI"
+   },
+   {
+      "job": "TECSEG",
+      "category":"PRJ",
+      "name":"TÉCNICO EM SEGURANÇA",
+      "type":"MOI"
+   },
+   {
+      "job": "FERSER",
+      "category":"PRD",
+      "name":"SERRALHEIRO",
+      "type":"MOD"
+   },
+   {
+      "job": "FERSOL",
+      "category":"PRD",
+      "name":"SOLDADOR",
+      "type":"MOD"
+   },
+   {
+      "job": "FERMAC",
+      "category":"PRD",
+      "name":"MAÇARIQUEIRO",
+      "type":"MOD"
+   },
+   {
+      "job": "INDLIX",
+      "category":"PRD",
+      "name":"LIXADOR",
+      "type":"MOD"
+   },
+   {
+      "job": "INDMAR",
+      "category":"PRD",
+      "name":"MARCENEIRO",
+      "type":"MOD"
+   },
+   {
+      "job": "INDMEC",
+      "category":"PRD",
+      "name":"MECÂNICO",
+      "type":"MOD"
+   },
+   {
+      "job": "INDMON",
+      "category":"PRD",
+      "name":"MONTADOR",
+      "type":"MOD"
+   },
+   {
+      "job": "INSPRD",
+      "category":"PRD",
+      "name":"INSTRUMENTISTA",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRALP",
+      "category":"PRD",
+      "name":"ALPINISTA",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRARM",
+      "category":"PRD",
+      "name":"ARMADOR",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRAZU",
+      "category":"PRD",
+      "name":"AZULEJISTA",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRCAR",
+      "category":"PRD",
+      "name":"CARPINTEIRO",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRELE",
+      "category":"PRD",
+      "name":"ELETRICISTA",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRENC",
+      "category":"PRD",
+      "name":"ENCANADOR",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRISO",
+      "category":"PRD",
+      "name":"ISOLADOR",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRMES",
+      "category":"PRD",
+      "name":"MESTRE DE OBRAS",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRPED",
+      "category":"PRD",
+      "name":"PEDREIRO",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRPIN",
+      "category":"PRD",
+      "name":"PINTOR",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRRIG",
+      "category":"PRD",
+      "name":"RIGGER",
+      "type":"MOD"
+   },
+   {
+      "job": "OBRSER",
+      "category":"PRD",
+      "name":"SERVIÇOS GERAIS",
+      "type":"MOD"
+   },
+   {
+      "job": "SEGCAS",
+      "category":"PRD",
+      "name":"CASEIRO",
+      "type":"MOD"
+   },
+   {
+      "job": "SEGPOR",
+      "category":"PRD",
+      "name":"PORTEIRO",
+      "type":"MOD"
+   },
+   {
+      "job": "SEGVIG",
+      "category":"PRD",
+      "name":"VIGILANTE",
+      "type":"MOD"
+   },
+   {
+      "job": "SEGZEL",
+      "category":"PRD",
+      "name":"ZELADOR",
+      "type":"MOD"
+   },
+   {
+      "job": "SERLIN",
+      "category":"PRD",
+      "name":"SERVIÇOS DE LIMPEZA",
+      "type":"MOD"
+   }
+]

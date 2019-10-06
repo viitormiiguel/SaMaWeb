@@ -1,0 +1,93 @@
+body {
+  /*background-color: #f3f4f5; */
+}
+
+#login {
+  background-color: #fff;
+  width: 500px;
+  height: 470px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #DADCE8; }
+  @media screen and (max-width: 500px) {
+    #login {
+      width: 100%;
+      margin-top: 20%; } }
+  #login h1 {
+    background-color: #4e4e4e;
+    color: #fff;
+    font-size: 1em;
+    padding: 0 50px;
+    text-transform: uppercase; }
+  #login .panel-login p {
+    text-align: center;
+    font-size: 1em;
+    color: #9E9E9E; }
+  #login .panel-login .captcha {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px; }
+    #login .panel-login .captcha p {
+      font-size: 12px;
+      text-align: left; }
+  #login .panel-login .campos {
+    padding-left: 50px;
+    padding-right: 50px; }
+    #login .panel-login .campos #msg-erro {
+      margin-top: 50px;
+      background-color: #ff7678;
+       }
+      #login .panel-login .campos #msg-erro p {
+        margin-bottom: 0;
+        color: #fff; }
+    @media screen and (max-width: 500px) {
+      #login .panel-login .campos {
+        padding-right: 20px;
+        padding-left: 20px; } }
+    #login .panel-login .campos #login-email, #login .panel-login .campos #login-senha {
+      margin-bottom: 0;
+      margin: 10px 0;
+      padding: 5px 10px;
+      width: 100%;
+      background-color: #f3f4f5;
+      border: 1px solid #ccc; }
+    #login .panel-login .campos ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      margin-bottom: 0; }
+    #login .panel-login .campos ::-moz-placeholder {
+      /* Firefox 19+ */
+      margin-bottom: 0; }
+    #login .panel-login .campos :-ms-input-placeholder {
+      /* IE 10+ */
+      margin-bottom: 0; }
+    #login .panel-login .campos a {
+      float: right;
+      padding-bottom: 35px;
+      font-size: 12px; }
+  #login .panel-login .botoes {
+    padding-left: 50px;
+    padding-right: 50px; }
+    @media screen and (max-width: 500px) {
+      #login .panel-login .botoes {
+        padding-right: 20px;
+        padding-left: 20px; } }
+    #login .panel-login .botoes .btn-entrar {
+      width: 100%;
+      background-color: #127dba;
+      text-transform: capitalize;
+      padding: 15px;
+      border-radius: 8px;
+      color: #fff;
+      text-transform: uppercase; }
+    #login .panel-login .botoes h4 {
+      color: #9E9E9E;
+      text-align: center;
+      font-size: 1em;
+      padding-top: 50px; }
+
+/*# sourceMappingURL=login.css.map */
