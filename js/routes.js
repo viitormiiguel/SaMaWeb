@@ -8,9 +8,19 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
 	// Rotas Angularjs
 	$routeProvider
 		.when('/',{
-			templateUrl: 'views/home/empresa.html',
-			controller: 'HomeEmpresaController',
-			activeTab: 'empresa'
+			templateUrl: 'views/home/goll.html',
+			controller: 'GollController',
+			activeTab: 'Goll'
+		})
+		.when('/itau',{
+			templateUrl: 'views/home/itau.html',
+			controller: 'ItauController',
+			activeTab: 'Itau'
+		})
+		.when('/natu',{
+			templateUrl: 'views/home/natu.html',
+			controller: 'NatuController',
+			activeTab: 'Natu'
 		})
 		.otherwise({redirectTo: '/'});
 
