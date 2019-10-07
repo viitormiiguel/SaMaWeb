@@ -8,8 +8,49 @@
 }
 
 #home{
+
+	#head{
+		ul{
+			li{
+				padding: 10px;
+				a{
+					font-style: bold;
+					font-weight: 500;
+					color: #000;
+				}
+			}
+		}
+	}
+	#head {
+		list-style: none;
+	    position: relative;
+	    // margin: 1em;
+	    margin-top: 20px;
+	    overflow: hidden;
+	}
+	#head ul {
+		border: none;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    margin-left: -1px;
+	}
+	#head li {
+	    flex-grow: 1;
+	    flex-basis: auto;
+	    margin: .25em 0;
+	    padding: 0 1em;
+	    text-align: center;
+	    border-left: 1px solid #ccc;
+	    background-color: #fff;
+	}
+	#head li:first-child{
+    border-left: none;
+	}
+
 	#grafico-tv{
-		padding-top: 10%;
+		// padding-top: 10%;
 		padding-bottom: 5%;
 		.tradingview-widget-contain{
 			#tv-medium-widget{
@@ -19,4 +60,95 @@
 			}
 		}
 	}
+
+	#card-info{
+		margin-top: 7%;
+		.h-100{
+			height: 400px!important;
+		}
+	}
+
+	.tabs-below{
+		ul{
+			position:relative;
+			margin-top: 3%;
+			padding-bottom: 2%;
+			border: none;
+			li{
+				padding: 10px;
+			}
+		}
+	}
+
+	#msg-cards{
+		// padding-top: 10%;
+		padding-bottom: 5%;
+		.card {
+			opacity: 0.8;
+			position: relative;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			min-width: 0;
+			word-wrap: break-word;
+			background-color: #fff;
+			background-clip: border-box;
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			border-radius: 0.25rem;
+			.card-body-icon {
+				margin-top: 30px;
+				position: absolute;
+				z-index: 0;
+				top: -1.25rem;
+				right: -1rem;
+				opacity: 0.4;
+				font-size: 3rem;
+				-webkit-transform: rotate(15deg);
+				transform: rotate(15deg);
+			}
+		}
+	}
+
+	.tab-content{
+		.tabs-below{
+			#cards-ul{
+				li{
+					width: 100%;
+					.card {
+						opacity: 0.8;
+						position: relative;
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: flex;
+						-webkit-box-orient: vertical;
+						-webkit-box-direction: normal;
+						-ms-flex-direction: column;
+						flex-direction: column;
+						min-width: 0;
+						word-wrap: break-word;
+						background-color: #fff;
+						background-clip: border-box;
+						border: 1px solid rgba(0, 0, 0, 0.8);
+						border-radius: 0.25rem;
+						.card-body-icon {
+							margin-top: 30px;
+							position: absolute;
+							z-index: 0;
+							top: -1.25rem;
+							right: -1rem;
+							opacity: 0.4;
+							font-size: 3rem;
+							-webkit-transform: rotate(15deg);
+							transform: rotate(15deg);
+						}
+					}
+				}
+			}
+		}
+	}
+
 }
