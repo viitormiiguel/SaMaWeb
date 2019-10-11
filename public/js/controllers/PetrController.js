@@ -1,4 +1,4 @@
-app.controller('ItauController', ['$rootScope', '$location', '$scope', '$http', 'EmpresaFactory', '$cookieStore', '$route', '$timeout', 
+app.controller('PetrController', ['$rootScope', '$location', '$scope', '$http', 'EmpresaFactory', '$cookieStore', '$route', '$timeout', 
 	function($rootScope, $location, $scope, $http, EmpresaFactory, $cookieStore, $route, $timeout){
 
 	$rootScope.activetab 	= $location.path();
@@ -6,9 +6,9 @@ app.controller('ItauController', ['$rootScope', '$location', '$scope', '$http', 
 	$scope.id 				= $cookieStore.get('session_id');
 	$scope.rootImg 			= 'img/wordcloud/';
 
-	$scope.img_pos = $scope.rootImg + "itsa4_p.png";
-	$scope.img_neg = $scope.rootImg + "itsa4_n.png";
-	$scope.file = 'results/polaritySentiLexPre_itsa4.csv';
+	$scope.img_pos = $scope.rootImg + "petr4_p.png";
+	$scope.img_neg = $scope.rootImg + "petr4_n.png";
+	$scope.file = 'results/polaritySentiLexPre_petr4.csv';
 
 	control.buscaTexto = function(id){
 		EmpresaFactory.buscaTexto(id).then(function(response){
@@ -117,7 +117,7 @@ app.controller('ItauController', ['$rootScope', '$location', '$scope', '$http', 
 
 				toolTip.style.display = 'block';
 				var price = param.seriesPrices.get(areaSeries);
-				toolTip.innerHTML = '<div style="color: rgba(255, 70, 70, 1)">ITUB</div>' +
+				toolTip.innerHTML = '<div style="color: rgba(255, 70, 70, 1)">PETR</div>' +
 					'<div style="font-size: 24px; margin: -3px 0px">' + Math.round(price * 100) / 100 + '</div>' +
 					'<div>' + dateStr + '</div>';
 
@@ -140,6 +140,16 @@ app.controller('ItauController', ['$rootScope', '$location', '$scope', '$http', 
 			console.log(errResponse);
 		});
 	}
-	control.buscaPrice('itub');
+	control.buscaPrice('pbr');
+
+	control.buscaCompany = function(id) {
+		EmpresaFactory.buscaCompany(id).then(function(response){
+			console.log(response.description)
+			$scope.description = response.description;
+		}, function(errResponse){
+		console.log(errResponse);
+		});
+	}
+	control.buscaCompany('gol');
 
 }]);

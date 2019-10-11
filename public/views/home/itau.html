@@ -5,10 +5,10 @@
             <ul class="nav nav-tabs nav-justified">
                 <li><a href="/">GOLL</a></li>
                 <li><a href="/itau">ITAU</a></li>
-                <li><a href="/natu">NATU</a></li>
-                <li><a href="/">APPL</a></li>
-                <li><a href="/">PETR</a></li>
-                <li><a href="/">BBDC</a></li>
+                <!-- <li><a href="/natu">NATU</a></li> -->
+                <!-- <li><a href="/">APPL</a></li> -->
+                <li><a href="/petr">PETR</a></li>
+                <!-- <li><a href="/">BBDC</a></li> -->
             </ul>
         </div>
     </div>
@@ -49,29 +49,8 @@
                 <div class="tab-content" ng-show="selectedTab == 1">
                     <div class="row" id="grafico-tv">
                         <div class="col-lg-12 col-md-12">
-                            <!-- TradingView Widget BEGIN -->
-                            <div class="tradingview-widget-container">
-                                <div id="tv-medium-widget"></div>
-                                <script type="text/javascript">
-                                    new TradingView.MediumWidget({
-                                        "container_id": "tv-medium-widget",
-                                        "symbols": [
-                                            [
-                                                "BMFBOVESPA:GOLL4|12m",
-                                            ]
-                                        ],
-                                        "greyText": "Quotes by",
-                                        "gridLineColor": "#e9e9ea",
-                                        "fontColor": "#83888D",
-                                        "underLineColor": "#dbeffb",
-                                        "trendLineColor": "#4bafe9",
-                                        "width": "100%",
-                                        "height": "400",
-                                        "locale": "en"
-                                    });
-                                </script>
+                            <div id="tradingview-container">                                
                             </div>
-                            <!-- TradingView Widget END -->
                         </div>
                     </div>
                 </div>
@@ -115,7 +94,7 @@
                     <div class="tabbable tabs-below" ng-init="selectedTab_1 = 1;">
                         <div class="row" id="msg-cards">
                             <div class="col-xl-6 col-sm-6" ng-class="{active: selectedTab_1 == 1}">
-                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 1;">
+                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 2;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
@@ -125,7 +104,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-sm-6"  ng-class="{active: selectedTab_1 == 2}">
-                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 2;">
+                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 1;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>

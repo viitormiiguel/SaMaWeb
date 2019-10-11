@@ -22,6 +22,11 @@ app.config(function($routeProvider, $locationProvider, $httpProvider) {
 			controller: 'NatuController',
 			activeTab: 'Natu'
 		})
+		.when('/petr',{
+			templateUrl: 'views/home/petr.html',
+			controller: 'PetrController',
+			activeTab: 'Petr'
+		})
 		.otherwise({redirectTo: '/'});
 
 });
