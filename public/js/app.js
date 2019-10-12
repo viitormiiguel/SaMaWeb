@@ -17,7 +17,7 @@ app.config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.useXDomain = true;
     $httpProvider.defaults.withCredentials = true;
     $httpProvider.defaults.headers.common["Accept"] = "*/*";
-    $httpProvider.defaults.headers.common["Content-Type"] = "application/json";
+    $httpProvider.defaults.headers.common["Content-Type"] = "application/json;charset=UTF-8";
 }]);
 
 
