@@ -9,6 +9,7 @@ app.controller('ItauController', ['$rootScope', '$location', '$scope', '$http', 
 	$scope.img_pos = $scope.rootImg + "itsa4_p.png";
 	$scope.img_neg = $scope.rootImg + "itsa4_n.png";
 	$scope.file = 'results/polaritySentiLexPre_itsa4.csv';
+	$scope.desc = "";
 
 	control.buscaTexto = function(id){
 		EmpresaFactory.buscaTexto(id).then(function(response){
@@ -141,5 +142,15 @@ app.controller('ItauController', ['$rootScope', '$location', '$scope', '$http', 
 		});
 	}
 	control.buscaPrice('itub');
+
+	control.init = function(id) {
+		EmpresaFactory.buscaCompany(id).then(function(response){
+			var descricao = response.description;
+			$scope.desc = descricao;
+		}, function(errResponse){
+			console.log(errResponse);
+		});
+	}
+	control.init('itub');
 
 }]);

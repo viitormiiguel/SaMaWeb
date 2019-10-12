@@ -18,23 +18,8 @@
         <div class="col-lg-3" id="card-info">
             <div class="card h-100">                
                 <div class="card-body">
-                    <h4 class="card-title"><a href="#">ITSA4</a></h4>
-                    <p class="card-text">Itaú Unibanco Holding SA provides financial products and services to individual and corporate clients in Brazil and abroad. It operates through the following segments: Retail Banking, Wholesale Banking, and Activities with the Market and Corporation. </p>
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-                            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/BMFBOVESPA-ITSA4/" rel="noopener" target="_blank"></div>
-                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                            {
-                                "symbol": "BMFBOVESPA:ITSA4",
-                                "width": "100%",
-                                "colorTheme": "light",
-                                 "isTransparent": false,
-                                "locale": "br"
-                            }
-                            </script>
-                    </div>
-                    <!-- TradingView Widget END -->
+                    <h4 class="card-title">ITUB</h4>
+                    <p class="card-text">{{desc}}</p>
                 </div>
             </div>
         </div>
@@ -94,7 +79,7 @@
                     <div class="tabbable tabs-below" ng-init="selectedTab_1 = 1;">
                         <div class="row" id="msg-cards">
                             <div class="col-xl-6 col-sm-6" ng-class="{active: selectedTab_1 == 1}">
-                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 2;">
+                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 1;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
@@ -104,7 +89,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-sm-6"  ng-class="{active: selectedTab_1 == 2}">
-                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 1;">
+                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 2;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
@@ -121,7 +106,7 @@
                                         <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                                         <div class="media-body">
                                             <h5 class="mt-0">Anonimo</h5>
-                                            {{i.info}}
+                                            <p>{{i.info}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +119,7 @@
                                         <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                                         <div class="media-body">
                                             <h5 class="mt-0">Anonimo</h5>
-                                            {{i.info}}
+                                            <p>{{i.info}}</p>
                                         </div>
                                     </div>
                                 </div>

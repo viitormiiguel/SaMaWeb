@@ -10,23 +10,6 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
 	$scope.img_neg = $scope.rootImg + "goll4_n.png";
 	$scope.file = 'results/polaritySentiLexPre_goll4.csv';
 
-	var chart = LightweightCharts.createChart(document.body, { width: 400, height: 300 });
-	var lineSeries = chart.addLineSeries();
-	lineSeries.setData([
-	    { time: '2019-04-11', value: 80.01 },
-	    { time: '2019-04-12', value: 96.63 },
-	    { time: '2019-04-13', value: 76.64 },
-	    { time: '2019-04-14', value: 81.89 },
-	    { time: '2019-04-15', value: 74.43 },
-	    { time: '2019-04-16', value: 80.01 },
-	    { time: '2019-04-17', value: 96.63 },
-	    { time: '2019-04-18', value: 76.64 },
-	    { time: '2019-04-19', value: 81.89 },
-	    { time: '2019-04-20', value: 74.43 },
-	]);
-	chart.timeScale().fitContent();
-
-
 	control.buscaTexto = function(id){
 		EmpresaFactory.buscaTexto(id).then(function(response){
 			$scope.textos = response.data;
@@ -161,7 +144,6 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
 
 	control.buscaCompany = function(id) {
 		EmpresaFactory.buscaCompany(id).then(function(response){
-			console.log(response.description)
 			$scope.description = response.description;
 		}, function(errResponse){
 		console.log(errResponse);

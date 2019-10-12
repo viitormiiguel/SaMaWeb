@@ -78,7 +78,7 @@
                     <div class="tabbable tabs-below" ng-init="selectedTab_1 = 1;">
                         <div class="row" id="msg-cards">
                             <div class="col-xl-6 col-sm-6" ng-class="{active: selectedTab_1 == 1}">
-                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 2;">
+                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 1;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-sm-6"  ng-class="{active: selectedTab_1 == 2}">
-                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 1;">
+                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 2;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
@@ -105,7 +105,7 @@
                                         <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                                         <div class="media-body">
                                             <h5 class="mt-0">Anonimo</h5>
-                                            {{i.info}}
+                                            <p>{{i.info}}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +118,7 @@
                                         <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                                         <div class="media-body">
                                             <h5 class="mt-0">Anonimo</h5>
-                                            {{i.info}}
+                                            <p>{{i.info}}</p>
                                         </div>
                                     </div>
                                 </div>

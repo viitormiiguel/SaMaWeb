@@ -17,7 +17,7 @@
 	    <div class="col-lg-3" id="card-info">
             <div class="card h-100">                
                 <div class="card-body">
-                    <h4 class="card-title"><a href="#">GOLL4</a></h4>
+                    <h4 class="card-title"><a href="#">PETR4</a></h4>
                     <p class="card-text">{{description}}</p>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                     <div class="tabbable tabs-below" ng-init="selectedTab_1 = 1;">
                         <div class="row" id="msg-cards">
                             <div class="col-xl-6 col-sm-6" ng-class="{active: selectedTab_1 == 1}">
-                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 2;">
+                                <div class="card text-white bg-success o-hidden h-100" ng-click="selectedTab_1 = 1;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-sm-6"  ng-class="{active: selectedTab_1 == 2}">
-                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 1;">
+                                <div class="card text-white bg-danger o-hidden h-100" ng-click="selectedTab_1 = 2;">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
@@ -98,27 +98,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-content" ng-show="selectedTab_1 == 1">
+                        <div class="tab-content" ng-show="selectedTab_1 == 2">
                             <div class="row" id="rw-textos">
                                 <div class="col-md-12">
                                     <div class="media mb-4" ng-repeat="i in texto_n">
                                         <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                                         <div class="media-body">
                                             <h5 class="mt-0">Anonimo</h5>
-                                            {{i.info}}
+                                            <p>{{i.info}}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-content" ng-show="selectedTab_1 == 2">
+                        <div class="tab-content" ng-show="selectedTab_1 == 1">
                             <div class="row" id="rw-textos">
                                 <div class="col-md-12">
                                     <div class="media mb-4" ng-repeat="i in texto_p">
                                         <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                                         <div class="media-body">
                                             <h5 class="mt-0">Anonimo</h5>
-                                            {{i.info}}
+                                            <p>{{i.info}}</p>
                                         </div>
                                     </div>
                                 </div>
