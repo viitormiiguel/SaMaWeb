@@ -1,5 +1,5 @@
-app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 'EmpresaFactory', '$cookieStore', '$route', '$timeout', 
-	function($rootScope, $location, $scope, $http, EmpresaFactory, $cookieStore, $route, $timeout){
+app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 'HomeFactory', '$cookieStore', '$route', '$timeout', 
+	function($rootScope, $location, $scope, $http, HomeFactory, $cookieStore, $route, $timeout){
 
 	$rootScope.activetab 	= $location.path();
 	var control 			= this;
@@ -11,7 +11,7 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
 	$scope.file = 'results/polaritySentiLexPre_goll4.csv';
 
 	control.buscaTexto = function(id){
-		EmpresaFactory.buscaTexto(id).then(function(response){
+		HomeFactory.buscaTexto(id).then(function(response){
 			$scope.textos = response.data;
 			lines = $scope.textos.split('\n');
 			$scope.pos_t = 0;
@@ -26,6 +26,7 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
         		if(l.indexOf('Positivo') !== -1){
 					$scope.pos_t += 1;
 	        		if (txt[0] != ''){
+	        			// console.log(txt[0])
 	        			$scope.texto_p.push({info: txt[0]});
 	        		}
 				}
@@ -43,7 +44,7 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
 	control.buscaTexto($scope.file);
 
 	control.buscaPrice = function(id){
-		EmpresaFactory.buscaPrice(id).then(function(response){
+		HomeFactory.buscaPrice(id).then(function(response){
 			precos = response;
 			arPrecos = [];
 			for (var i = precos.length - 1; i >= 0; i--) {
@@ -143,7 +144,7 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
 	control.buscaPrice('gol');
 
 	control.buscaCompany = function(id) {
-		EmpresaFactory.buscaCompany(id).then(function(response){
+		HomeFactory.buscaCompany(id).then(function(response){
 			$scope.description = response.description;
 		}, function(errResponse){
 		console.log(errResponse);

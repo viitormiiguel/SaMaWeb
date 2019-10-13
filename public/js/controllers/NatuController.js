@@ -1,5 +1,5 @@
-app.controller('NatuController', ['$rootScope', '$location', '$scope', '$http', 'EmpresaFactory', '$cookieStore', '$route', '$timeout', 
-	function($rootScope, $location, $scope, $http, EmpresaFactory, $cookieStore, $route, $timeout){
+app.controller('NatuController', ['$rootScope', '$location', '$scope', '$http', 'HomeFactory', '$cookieStore', '$route', '$timeout', 
+	function($rootScope, $location, $scope, $http, HomeFactory, $cookieStore, $route, $timeout){
 
 	$rootScope.activetab 	= $location.path();
 	var control 			= this;
@@ -11,7 +11,7 @@ app.controller('NatuController', ['$rootScope', '$location', '$scope', '$http', 
 	$scope.file = 'results/polaritySentiLexPre_natu3.csv';
 
 	control.buscaTexto = function(id){
-		EmpresaFactory.buscaTexto(id).then(function(response){
+		HomeFactory.buscaTexto(id).then(function(response){
 			$scope.textos = response.data;
 			lines = $scope.textos.split('\n');
 			$scope.pos_t = 0;
@@ -43,7 +43,7 @@ app.controller('NatuController', ['$rootScope', '$location', '$scope', '$http', 
 	control.buscaTexto($scope.file);
 
 	control.buscaPrice = function(id){
-		EmpresaFactory.buscaPrice(id).then(function(response){
+		HomeFactory.buscaPrice(id).then(function(response){
 			precos = response;
 			arPrecos = [];
 			for (var i = precos.length - 1; i >= 0; i--) {
