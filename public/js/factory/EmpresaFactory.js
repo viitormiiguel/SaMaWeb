@@ -1,4 +1,4 @@
-app.factory('HomeFactory', ['$http', '$q', '$rootScope', function($http, $q, $rootScope){
+app.factory('EmpresaFactory', ['$http', '$q', '$rootScope', function($http, $q, $rootScope){
 
 	var rota 	= $rootScope.$server + "TradingView/";
 	var data 	= "js/data/";
@@ -19,7 +19,7 @@ app.factory('HomeFactory', ['$http', '$q', '$rootScope', function($http, $q, $ro
 		},
 		buscaPrice: function(id){
 			// 1 year historical
-			return $.get(iex + id + '/chart/6m?token=' + token, function(data, status){
+			return $.get(iex + id + '/chart/1y?token=' + token, function(data, status){
     			return data;
   			});
 		},

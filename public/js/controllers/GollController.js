@@ -8,12 +8,12 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
 
 	$scope.img_pos = $scope.rootImg + "goll4_p.png";
 	$scope.img_neg = $scope.rootImg + "goll4_n.png";
-	$scope.file = 'results/polaritySentiLexPre_goll4.csv';
+	$scope.file = 'results/polaritySentiLexPre_goll4.json';
 
 	control.buscaTexto = function(id){
 		HomeFactory.buscaTexto(id).then(function(response){
 			$scope.textos = response.data;
-			lines = $scope.textos.split('\n');
+			lines = $scope.textos;
 			$scope.pos_t = 0;
 			$scope.neg_t = 0;
 			$scope.total = 0;
@@ -22,18 +22,16 @@ app.controller('GollController', ['$rootScope', '$location', '$scope', '$http', 
 			for (var i = lines.length - 1; i >= 0; i--) {
         		l = lines[i];
         		$scope.total += 1;
-        		txt = l.split(';');
-        		if(l.indexOf('Positivo') !== -1){
+        		if(l.pol.indexOf('Positivo') !== -1){
 					$scope.pos_t += 1;
-	        		if (txt[0] != ''){
-	        			// console.log(txt[0])
-	        			$scope.texto_p.push({info: txt[0]});
+	        		if (l.text != ''){
+	        			$scope.texto_p.push({info: l.text});
 	        		}
 				}
-				if(l.indexOf('Negativo') !== -1){
+				if(l.pol.indexOf('Negativo') !== -1){
 					$scope.neg_t += 1;
-					if (txt[0] != ''){
-	        			$scope.texto_n.push({info: txt[0]});
+	        		if (l.text != ''){
+	        			$scope.texto_n.push({info: l.text});
 	        		}
 				}
     		}

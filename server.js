@@ -22,6 +22,8 @@ app.all("/public/*", function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
+    res.header("Content-Type", "application/csv; charset=utf-8");
+    res.charset = 'utf-8';
     return next();
 });
 
@@ -29,8 +31,6 @@ app.use(express.static(__dirname + '/public'))
 	.get('*',function (req,res) {
         res.sendfile(__dirname + '/public/views/index.html');
     });
-
-
 
 require('./app/routes')(app);
 
